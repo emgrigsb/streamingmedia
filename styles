@@ -1,0 +1,20 @@
+/* TYPOGRAPHY */
+html {
+    background-color: #020659;
+}
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* FONT SIZES */
+h1 {
+    font-size: 1.25em;
+}
+h2, h3 {
+    font-family: 1em;
+}
+p, dl, dd {
+    font-size: 1em;
+}
+footer p {
+    font-size: .75em;
+}
