@@ -88,6 +88,10 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
     }
 }
 
-ul li {
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+}
+nav > ul > li {
     text-transform: small-caps;
 }
