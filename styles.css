@@ -4,32 +4,40 @@ html {
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0 auto;
+    color: #ffffff;
+    display: grid;
 }
 header {
-    background: linear-gradient(to right, #2104d9, #030a8c, #020873, #020659);
+    background: linear-gradient(to right, #2104d9, #030a8c, #020873, #020659, #000000);
     color: #ffffff;
 }
-main {
+main, footer {
     background-color: #ffffff;
 }
-footer {
-    background-color: #ffffff;
-    color: #590242;
-    text-align: center;
-}
-/* FONT SIZES */
+
+/* TEXT */
 h1 {
     font-size: 1.25em;
+    line-height: 2em;
+}
+h1, h2, h3 {
+    font-weight: bold;
+    text-transform: uppercase;
 }
 h2, h3 {
-    font-family: 1em;
+    font-size: 1em;
+    line-height: 2em;
+    color: #590242;
 }
 p, dl, dd {
     font-size: 1em;
 }
 footer p {
     font-size: .75em;
+    text-align: center;
+    color: #590242;
 }
+
 /* MENU CODE FOR MOBILE FIRST STYLE */
 ul {
     overflow: hidden;
@@ -96,17 +104,21 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
     label span, input {
         display: none;
     }
-
     nav a:hover {
         background-color: #590242;
     }
+
 }
 
-ul li:first-of-type {
+nav:first-child {
+    display: block;
+    position: absolute;
     text-transform: small-caps;
 }
-nav li {
+nav ul {
     list-style: none;
+    text-align: center;
+    padding: 10px;
 }
 nav a {
     color: #ffffff;
@@ -114,15 +126,25 @@ nav a {
     text-transform: uppercase;
 }
 
-#trending {
-    background-color: #ffffff;
+#playlists .scroll, #curated .scroll {
+    text-align: center;
 }
-#playlists {
+#playlists .scroll {
     background-color: #2699fb;
 }
-#curated {
+#playlists section {
+    background-color: #0d8dfb;
+}
+#curated .scroll {
     background-color: #030a8c;
 }
+#curated section {
+    background-color: #020873;
+}
+#playlists h3, #curated h3 {
+    color: #ffffff;
+}
+
 .scroll {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -143,6 +165,7 @@ nav a {
 }
 dl {
     display: flex;
+    color:#590242;
 }
 dt {
     padding-right: 5px;
@@ -166,6 +189,7 @@ audio {
 .more:hover {
     background-color: #020659;
 }
+
 /* AUDIO */
 audio::-webkit-media-controls-mute-button {
     background-color: #ffffff;
@@ -178,6 +202,7 @@ audio::-webkit-media-controls-play-button {
 audio::-webkit-media-controls-enclosure {
     background-color: rgba(255, 255, 255, .5);
 }
+
 /* SCROLL */
 #trending ::-webkit-scrollbar {
     width: 15px;
