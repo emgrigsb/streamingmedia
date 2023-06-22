@@ -45,6 +45,20 @@ footer p {
     text-align: center;
     color: #590242;
 }
+nav li:first-child {
+    text-align: center;
+    text-transform: small-caps;
+}
+nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 10px;
+}
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
 
 /* MENU CODE FOR MOBILE FIRST STYLE */
 ul {
@@ -101,21 +115,6 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
     top: 0;
 }
 
-nav li:first-child {
-    text-align: center;
-    text-transform: small-caps;
-}
-nav ul {
-    list-style: none;
-    text-align: center;
-    padding: 10px;
-}
-nav a {
-    color: #ffffff;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
 /* MAIN */
 #playlists .scroll, #curated .scroll {
     text-align: center;
@@ -135,7 +134,6 @@ nav a {
 #playlists h3, #curated h3 {
     color: #ffffff;
 }
-
 .scroll {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -250,7 +248,6 @@ audio::-webkit-media-controls-enclosure {
     nav a:hover {
         background-color: #590242;
     }
-
     .scroll {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
